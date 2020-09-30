@@ -1,9 +1,10 @@
 # PHP dev container
 All in one php dev container to use with vscode
 
+Find it on the docker hub : https://hub.docker.com/r/jrouaix/phpdevcontainer
+
 ``` bash
-echo NO_WORKING | docker login ghcr.io -u jrouaix --password-stdin
-docker pull ghcr.io/jrouaix/phpdevcontainer:latest
+docker pull jrouaix/phpdevcontainer:latest
 ```
 
 ## To enjoy a working php environment in VSCode
@@ -11,7 +12,20 @@ docker pull ghcr.io/jrouaix/phpdevcontainer:latest
 - open your repo in VSCode
 - install the recommended extensions when asked by VSCode
 
-![](_assets/recommended_extensions.png)
+![install recommended extensions](_assets/recommended_extensions.png)
+
+- then VSCode should ask for reopening the folder in dev container
+- click on `Reopen in Container` 
+
+![Reopen in container](_assets/open_in_container.png)
+
+- When VSCode reopened in the dev container, you are set to hack with a full php env
+
+![All installed versions](_assets/all_versions.png)
+
+## What to do with this environment
+
+
 
 
 ## More reading
