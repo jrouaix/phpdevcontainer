@@ -2,7 +2,7 @@
 	// https://code.visualstudio.com/docs/remote/devcontainerjson-reference
 	
 	"name": "PHP",
-	"image": "ghcr.io/jrouaix/phpdevcontainer:latest",
+	"image": "jrouaix/phpdevcontainer",
 	// "dockerFile": "Dockerfile",
 
     // Comment out the next line to run as root instead. Linux users, update
