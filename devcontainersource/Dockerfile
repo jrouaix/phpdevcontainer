@@ -27,9 +27,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && wget https://raw.githubusercontent.com/composer/getcomposer.org/master/web/installer -O - -q | php \
     && mv composer.phar /usr/local/bin/composer
 
-RUN wget -O phpunit https://phar.phpunit.de/phpunit-9.phar \
-    && chmod +x phpunit \
-    && mv phpunit /usr/local/bin/phpunit
+# RUN wget -O phpunit https://phar.phpunit.de/phpunit-9.phar \
+#     && chmod +x phpunit \
+#     && mv phpunit /usr/local/bin/phpunit
 
 RUN wget https://get.symfony.com/cli/installer -O - | bash \
     && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
