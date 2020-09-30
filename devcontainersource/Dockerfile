@@ -31,4 +31,7 @@ RUN wget -O phpunit https://phar.phpunit.de/phpunit-9.phar \
     && chmod +x phpunit \
     && mv phpunit /usr/local/bin/phpunit
 
+RUN wget https://get.symfony.com/cli/installer -O - | bash \
+    && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+    
 # RUN composer require --dev phpunit/phpunit ^9

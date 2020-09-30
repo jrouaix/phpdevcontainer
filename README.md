@@ -7,6 +7,14 @@ Find it on the docker hub : https://hub.docker.com/r/jrouaix/phpdevcontainer
 docker pull jrouaix/phpdevcontainer:latest
 ```
 
+## Installed in this dev container
+- php
+- composer
+- phpunit
+- node
+- npm
+- symfony
+
 ## To enjoy a working php environment in VSCode
 - copy the `project` folder content at the root of your repository
 - open your repo in VSCode
