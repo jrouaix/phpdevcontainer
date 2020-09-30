@@ -31,7 +31,29 @@ docker pull jrouaix/phpdevcontainer:latest
 
 ![All installed versions](_assets/all_versions.png)
 
+
 ## What to do with this environment
+### create a php file and serve
+```bash
+
+rm index.php
+
+cat >> index.php << END
+<?php
+    function sayHello(\$name) {
+        echo "Hello \$name!";
+    }
+?>
+<html><body><?php
+    \$number=42;
+    sayHello('world' . \$number);
+    phpinfo(); 
+?></body></html>
+END
+
+php -S 0.0.0.0:8000
+
+```
 
 
 
@@ -39,5 +61,4 @@ docker pull jrouaix/phpdevcontainer:latest
 ## More reading
 
 - https://code.visualstudio.com/docs/remote/containers
-- https://github.com/Microsoft/vscode-remote-try-php
-
+- https://github.com/microsoft/vscode-remote-try-php
