@@ -1,10 +1,21 @@
-# phpdevcontainer
+# PHP dev container
 All in one php dev container to use with vscode
 
-my public `read:packages` access token : 424e4b8e23e832f0265688d096270e4af7f9fada
-(do not worry you only have a read package access, and this token will be removed as soon as github allow anonymous pull)
-
 ``` bash
-echo 424e4b8e23e832f0265688d096270e4af7f9fada | docker login ghcr.io -u jrouaix --password-stdin
+echo NO_WORKING | docker login ghcr.io -u jrouaix --password-stdin
 docker pull ghcr.io/jrouaix/phpdevcontainer:latest
 ```
+
+## To enjoy a working php environment in VSCode
+- copy the `project` folder content at the root of your repository
+- open your repo in VSCode
+- install the recommended extensions when asked by VSCode
+
+![](_assets/recommended_extensions.png)
+
+
+## More reading
+
+- https://code.visualstudio.com/docs/remote/containers
+- https://github.com/Microsoft/vscode-remote-try-php
+
