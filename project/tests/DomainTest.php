@@ -8,6 +8,21 @@ final class DomainTest extends TestCase
         $sut = new CinemaService();
         $query = new CinemaListeQuery();
         $cinemas = $sut->getCinemas($query);
-        $this->assertEquals(count($cinemas), 1);
+        $this->assertEquals(count($cinemas), 2);
+    }
+
+    public function testCinemaService_can_get_a_cinema(): void
+    {
+        $sut = new CinemaService();
+        $query = new CinemaEntityQuery(2);
+        $cinema = $sut->getCinema($query);
+        $this->assertNotSame($cinema, null);
+        // var_dump($sut);
+        $this->assertEquals($cinema->nom, "Dragon");
+    }
+
+    public function testPHPundefinedIsNull(): void
+    {
+        $this->assertSame($voidvoid, null);
     }
 }

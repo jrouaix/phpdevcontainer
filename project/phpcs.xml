@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="MyStandard">
+
+<!-- https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset -->
+<!-- THIS DOES NOT WORK ! -->
+    <description>My custom coding standard.</description>
+    
+    <rule ref="PEAR">
+        <exclude name="PEAR.Commenting.ClassComment"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingCategoryTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingPackageTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingLinkTag"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingVersion"/>
+        <exclude name="PEAR.Commenting.InlineComment"/>
+    </rule>
+
+</ruleset>
