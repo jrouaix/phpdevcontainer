@@ -23,6 +23,9 @@
 
 	"extensions": [
         "felixfbecker.php-debug",
-        "felixfbecker.php-intellisense"
+		"felixfbecker.php-intellisense",
+		"mehedidracula.php-namespace-resolver",
+		"mehedidracula.php-constructor",
+		"ikappas.phpcs"
     ]	
 }

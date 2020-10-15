@@ -12,7 +12,11 @@
             "App\\": "tests/"
         }
     },
+    "require": {
+
+    },
     "require-dev": {
+        "squizlabs/php_codesniffer": "^3",
         "phpunit/phpunit": "^9"
     }
 }
