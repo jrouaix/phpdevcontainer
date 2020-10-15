@@ -64,7 +64,10 @@ composer install
 composer dump-autoload
 ./vendor/bin/phpunit tests
 ```
-
+Or (if you reopen this dev container)
+```bash
+composer update
+```
 # More reading
 
 - https://code.visualstudio.com/docs/remote/containers
