@@ -34,5 +34,14 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 RUN wget https://get.symfony.com/cli/installer -O - | bash \
     && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
 
-RUN composer global require squizlabs/php_codesniffer
+RUN COMPOSER_MEMORY_LIMIT=-1 composer global require squizlabs/php_codesniffer
+
+# RUN rm -Rf vendor \
+#     && COMPOSER_MEMORY_LIMIT=-1 composer require symfony/flex \
+#     && COMPOSER_MEMORY_LIMIT=-1 composer require routing orm symfony/dotenv yaml annotations form validator security-csrf \
+#     && COMPOSER_MEMORY_LIMIT=-1 composer require --dev server debug symfony/maker-bundle symfony/phpunit-bridge \
+#     && COMPOSER_MEMORY_LIMIT=-1 composer require --dev symfony/browser-kit symfony/css-selector \
+#     && COMPOSER_MEMORY_LIMIT=-1 composer install 
+
 # RUN composer require --dev phpunit/phpunit ^9
+
