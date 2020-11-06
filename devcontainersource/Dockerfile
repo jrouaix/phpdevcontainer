@@ -33,5 +33,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 RUN wget https://get.symfony.com/cli/installer -O - | bash \
     && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
-    
+
+RUN composer global require squizlabs/php_codesniffer
 # RUN composer require --dev phpunit/phpunit ^9
