@@ -60,13 +60,13 @@ php -S 0.0.0.0:8000
 There already is some `composer.json` default file and `src/Email.php` & `test/EmailTest.php` examples. 
 
 ```bash
-composer install
+COMPOSER_MEMORY_LIMIT=-1 composer install
 composer dump-autoload
 ./vendor/bin/phpunit tests
 ```
 Or (if you reopen this dev container)
 ```bash
-composer update
+COMPOSER_MEMORY_LIMIT=-1 composer update
 ```
 # More reading
 
